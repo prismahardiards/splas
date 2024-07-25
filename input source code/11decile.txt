@@ -1,0 +1,34 @@
+# Library used
+import numpy as np
+
+# Example dataset
+data = [1,3,5,7,9,2,4,6,8,10]
+
+# Sorting the data
+sorted = np.sort(data)
+
+# Determine the length of data
+n = len(sorted)
+print("length", n)
+
+# Determine the value position of decile
+k = 3
+Dk = k * (n-1)/10
+print("value position of decile", Dk)
+
+# Check the balue position of decile
+if Dk.is_integer():
+    Dv = sorted[int(Dk) - 1]
+else:
+    xp1 = sorted[int(np.floor(Dk))]
+    xp2 = sorted[int(np.ceil(Dk))]
+    Dm = int(Dk)
+
+    Dv = xp1 + (xp2-xp1)*(Dk-Dm)
+
+print("decile", Dv)
+
+# Output Value
+length: 10
+value position of decile: 2.7
+decile: 3.7

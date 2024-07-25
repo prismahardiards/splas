@@ -1,0 +1,33 @@
+# Library used
+import numpy as np
+
+# Example dataset
+data = [1,2,3,4,5,6,7,8,9,10]
+
+# Sorting the data
+sorted = np.sort(data)
+
+# Determine the length of data
+n = len(sorted)
+print("length", n)
+
+# Determine the value position of quartile 2
+PQ2 = (2/4)*(n+1)
+print("value position of quartile 2", PQ2)
+
+# Check the balue position of quartile 2
+if PQ2.is_integer():
+    Q2 = sorted[int(PQ2) - 1]
+else:
+    xp1 = sorted[int(np.floor(PQ2))]
+    xp2 = sorted[int(np.ceil(PQ2))]
+    PQ3 = int(PQ2)
+
+    Q2 = xp1 + (xp2-xp1)*(PQ2-PQ3)
+
+print("quartil 2", Q2)
+
+# Output Value
+length: 10
+value position of quartile 2: 5.5
+quartil 2: 6.5

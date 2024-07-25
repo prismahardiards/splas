@@ -1,0 +1,19 @@
+# Example dataset
+data = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+# Calculate the sum of the dataset
+total = sum(data)
+print("sum of dataset", total)
+    
+# Calculate the number of elements in the dataset
+n = len(data)
+print("number of elements", n)
+    
+# Calculate the mean
+mean = total / n
+print("mean", mean)
+
+# Output Value
+sum of dataset: 110
+number of elements: 10
+mean: 11

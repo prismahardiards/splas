@@ -1,0 +1,22 @@
+# Example dataset
+data = [2, 2, 4, 4, 6, 6, 9, 6, 6, 9]
+
+# Determine the frequency
+frequency = {}
+for str in data :
+    if str in frequency :
+        frequency[str] += 1
+    else :
+        frequency[str] = 1
+
+# Determine the maximum frequency
+maxs = max(list(frequency.values()))
+print("maxs", maxs)
+
+# Identification of mode
+mode = [key for key, value in frequency.items() if value == maxs]
+print("mode", mode)
+
+# Output Value
+maxs: 4
+mode: 6

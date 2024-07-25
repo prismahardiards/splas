@@ -1,0 +1,24 @@
+# Library used
+import numpy as np
+
+# Example dataset
+odd = [18, 2, 10, 8, 6, 14, 12, 4, 16]
+even = [18, 2, 10, 8, 20, 6, 14, 12, 4, 16]
+
+# Calculate median for odd data
+x1 = np.sort(odd)
+n1 = len(x1)
+modd = x1[int(n1 / 2)]
+print("Median with odd data", modd)
+
+# Calculate median for even data
+x2 = np.sort(even)
+n2 = len(x2)
+m1 = x2[int(n2 / 2) - 1]
+m2 = x2[int(n2 / 2)]
+meven = (m1 + m2) / 2
+print("Median with even data", meven)
+
+# Output Value
+median with odd data: 10
+median with even data: 11

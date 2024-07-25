@@ -1,0 +1,50 @@
+<h2 id="statement">13</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Library used
+02: import math as mt
+03: 
+04: # Example dataset
+05: data = [1,5,10,15,20]
+06: 
+07: # Calculate mean
+08: total = sum(<input size=2 ans="db0525b93563078b4f957349c3998c510e01d7b00512a905756714234221f11b" placeholder="1"></input>)
+09: n = len(<input size=2 ans="54b804fea4d2500f43428cd84eb32fc6d8fde0e62532f1012d4ce812e3d2becd" placeholder="2"></input>)
+10: mean = total <input size=2 ans="f3c6c6b169334a14d5cee2062091f89dbabf19b87d017198e9fc19a6fcd3ded0" placeholder="3"></input> <input size=2 ans="e66906bcea8e9e123c0135de9f3d8e5f2005a3b7bbd70ba8d934bed20ffa47d6" placeholder="4"></input>
+11: print("mean", mean)
+12: 
+13: # Calculate standard deviation
+14: square = ((<input size=2 ans="853af7ba5c8eef497dc2e816bbf6b0fcd1cdfccc94bfda9f320bff58a49bac73" placeholder="5"></input> <input size=2 ans="eaf2c7b21f84278d6cd901eaafddb8d261f4c856a71b04e6d653ac1a1ffd09cc" placeholder="6"></input> <input size=2 ans="349504c637fd05ca76296a3d1956801352036da3470766fa84875be19566c5c9" placeholder="7"></input>) ** <input size=2 ans="b3773ecbf7494c6f8e965f6826e65cdfcc621a1c25f8b57866f60137b7a16da5" placeholder="8"></input> for x in data)
+15: var = sum(<input size=2 ans="164c308f92a423f8a54c1785c3e2ffb5a9401aae8ac520002d113d8b024a4ca4" placeholder="9"></input>) / (n <input size=2 ans="f1f4ea6a11930acd7ba22ebdf87e9510938d6a8fce051e35e61ea09f6903cb16" placeholder="10"></input> <input size=2 ans="81cb2c83cfca1e0f3af853d7f3b12911f69c394ba8426dc48a6e17b485398646" placeholder="11"></input>)
+16: std = mt.sqrt(<input size=2 ans="f409be9e2a836a39e56df2eb4a6b82125636f8676566669e4601874b151c1887" placeholder="12"></input>)
+17: print("standard deviation", std)
+18: 
+19: # Calculate skewness
+20: cube = <input size=2 ans="7c83a1f0f598de011d779708fbda3d415bfc9804751d834690875efb7bf26985" placeholder="13"></input>[(x <input size=2 ans="f43459e55c2d483077bcb2905550a3d43434f6efb73eb064e9b2e0fa3f726c51" placeholder="14"></input> <input size=2 ans="ea7559062ccc91bfa2f60e9043cce4b7370a95aee1f42d49ec61520a25786003" placeholder="15"></input>) ** <input size=2 ans="7e480b43bfd644943694eedd22f22179d551b54257c885ae3b65372b5c26e5b3" placeholder="16"></input> for x in data]
+21: G1 = (<input size=2 ans="7a234ebeba06f781749f6dc37ab83064fb9a27edfa67f9c78d0873d4a9613956" placeholder="17"></input><input size=2 ans="c93b39e807a072c31145c8c7a7722656d368a4eb6e87576556eccf5d94d5e150" placeholder="18"></input>((n-1)*(n-<input size=2 ans="135f8a0b661a2f2a94273efdb0156991178113b8deba2063ccbd8ba0cda0dfb7" placeholder="19"></input>)))*(cube/(<input size=2 ans="d8d50d6ac17a66810c32fc2c8932834b60f6941caf11f646270eab5f9335ec25" placeholder="20"></input>**3))
+22: print("skewness", G1)
+23: 
+24: # Outpur Value
+25: mean: 10.2
+26: standard deviation: 7.60
+27: skewness: 0.13<br>
+Q1. Which function is used to returns the square root of a number? <input size=2 ans="fa755aab00daaa6702ba10ade3fc38fe054e18ca6f4ded99cec01e22b97deb2b" placeholder="21"></input>
+Q2. Which library is used in this source code implementation? <input size=2 ans="9021653fdf37e5d58071ddc5edc2e39c063c482049824824b5b4a41be7ae38a9" placeholder="22"></input>
+Q3. Which function is used to counting the amount of data? <input size=2 ans="84cff49289052505a9415e2de4d17919110667f905f7ccceb6803190ff331097" placeholder="23"></input>
+Q4. What is the value of standard deviation? <input size=2 ans="b41f23acefb11912c188ba56d604907aa072704f3664cb86d522e5e73e9d8474" placeholder="24"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/1-mean.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

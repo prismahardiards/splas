@@ -1,0 +1,55 @@
+<h2 id="statement">8</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Library used
+02: import numpy as np
+03: 
+04: # Example dataset
+05: data = [1,2,3,4,5,6,7,8,9,10]
+06: 
+07: # Sorting the data
+08: sorted = <input size=2 ans="dbf4023a8fc0eef77d2bc0cef27124b51c98cbb36ab4ee02fc00794069104d1d" placeholder="1"></input>.sort(data)
+09: 
+10: # Determine the length of data
+11: n = <input size=2 ans="0eb6ffb8c89198f865a985a0fd171ea47d6184509c4ab5e3f5af401821bf05d9" placeholder="2"></input>(sorted)
+12: print("length", n)
+13: 
+14: # Determine the value position of quartile 1
+15: PQ1 = (<input size=2 ans="b8aed072d29403ece56ae9641638ddd50d420f950bde0eefc092ee8879554141" placeholder="3"></input>/4)<input size=2 ans="f0b98c3328a57615c1f894b0ce5fdb94782c076b7dca209d0cfbd120968fef82" placeholder="4"></input>(<input size=2 ans="35d7963d25cb8d422a42ed30f6c8cb6df205c319dfebb8d5eb4d162d8ef3ddda" placeholder="5"></input>+1)
+16: print("value position of quartile 1", PQ1)
+17: 
+18: # Check the balue position of quartile 1
+19: if PQ1.is_integer():
+20:     Q1 = sorted[int(<input size=2 ans="1f186dd65f1c7e4feade9f48a0b687924b1824a5f57d26f3fe34e54cc4e4076c" placeholder="6"></input>7_) <input size=2 ans="b144260b862ee1cec260f46364bcf635b4b4f5ee1287774670b46b4de1ef5827" placeholder="8"></input> 1]
+21: else:
+22:     xp1 = <input size=2 ans="0c24eaefbb695acc6a9bd8b0417fbff9aba5f32f4c5eb181f2c79f45c5975e7e" placeholder="9"></input>[int(np.floor(<input size=2 ans="ec723b00d7e09a19e3b7835c865e4942806f406f7da0a81600f160525c4e0b28" placeholder="10"></input>))]
+23:     xp2 = <input size=2 ans="92439c096468bf3c2738f6d2bfae4219f045ec352073292f410da480f426d931" placeholder="11"></input>[int(np.<input size=2 ans="04a33537696ba1ebdd0043c6e42615625cc34fac9db2a0e7a51cef14f2c25f11" placeholder="12"></input>(PQ1))]
+24:     PQ2 = <input size=2 ans="ebbe48dd0bc2adf9cde7bc788df8744cad8bf44edaca8909f6ff55d795b7ffd3" placeholder="13"></input>(PQ1)
+25: 
+26:     Q1 = <input size=2 ans="59d76a793ecfda1512c2337b800a06efded1a14549ad05554bd4c1105686b8a6" placeholder="14"></input> + (xp2<input size=2 ans="1bd5bb5893f55f1634d4f22dbff80ccc4b414d8bc3dc8e2b5c368cf34d2811d9" placeholder="15"></input>xp1)*(PQ1-<input size=2 ans="630c01f4902a99d8818d11cafcfd78ee87753e46b6a5c5b591a60c2ef0106056" placeholder="16"></input>)
+27: 
+28: print("quartil 1", Q1)
+29: 
+30: # Output Value
+31: length: 10
+32: value position of quartile: 1 2.75
+33: quartil 1: 3.75<br>
+Q1. sort? <input size=2 ans="ea2e8874fdbd45c47bb42f26572931d04f1bfefb7e4cf66ff3acf1cf89030e9d" placeholder="17"></input>
+Q2. Which library is used in this source code implementation? <input size=2 ans="31de14f4160e4e8eb18565c962dcb3325e21f15c91fe86171d4915051d13ec5d" placeholder="18"></input>
+Q3. What is the value of length? <input size=2 ans="cfeedafff74c2c2e32dafbda78d5949de35a25e0361db7d7b4cfd3f4c278ad0b" placeholder="19"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/1-mean.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

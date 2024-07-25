@@ -1,0 +1,56 @@
+<h2 id="statement">11</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Library used
+02: import numpy as np
+03: 
+04: # Example dataset
+05: data = [1,3,5,7,9,2,4,6,8,10]
+06: 
+07: # Sorting the data
+08: sorted = np.<input size=2 ans="eca4d238469bd51315782bb29563e11f2b3ba345afbec8b489ccb977db513cfe" placeholder="1"></input>(data)
+09: 
+10: # Determine the length of data
+11: n = <input size=2 ans="0b1d75e28d31de4ef9197d306e0327aa1c757d8acd1027a0b45e8a65cffc3b75" placeholder="2"></input>(sorted)
+12: print("length", n)
+13: 
+14: # Determine the value position of decile
+15: k = <input size=2 ans="1a67316dfbb24cbd5a17450aa53cd9ae42cdc7b1f58d06ec71bdcf2c9ad1fb28" placeholder="3"></input>
+16: Dk = <input size=2 ans="003c9be099b56ef5eef1f3d539a95e9f3d93374d1b7798c15dc66303799b6160" placeholder="4"></input> * (n<input size=2 ans="b0e8a3f4f6370ae6b4e4000ef5990d948f3f8bc9bb7b1b57420d62019591f51f" placeholder="5"></input>1)/<input size=2 ans="c81770e48345cf545ff568e528c3e38006d658c0efd8e7b1d0721e78e8f570b7" placeholder="6"></input>
+17: print("value position of decile", Dk)
+18: 
+19: # Check the balue position of decile
+20: if Dk.is_integer():
+21:     Dv = <input size=2 ans="749ce75aeae422215c818048715c86fe2268cdcb8391c53f5e9780754acce213" placeholder="7"></input>[int(Dk) <input size=2 ans="bd69f6b314b0c2e55179a3c1f81c88c7c72cb2653801e298b8988a5054b6f936" placeholder="8"></input> <input size=2 ans="b280279a0ef279d0b9f0bdc4162591dbbc6312abac67120527b20d65c7de5dbf" placeholder="9"></input>]
+22: else:
+23:     xp1 = sorted[int(<input size=2 ans="fd999351a0060a3e18ff78bdbd30e0787ad1ea6bf89a0d02ae17b7085c882c36" placeholder="10"></input>.floor(<input size=2 ans="7cdb62ea8df59d9042acf41ec36bd1f0e5bc8936b3df3857bd5deb255127ec55" placeholder="11"></input>))]
+24:     xp2 = sorted[int(<input size=2 ans="ce33f7d0462b0031d6ce4d7ff85981983905b26d8fc1f6811e350f0e1f922da8" placeholder="12"></input>.ceil(<input size=2 ans="be377a6abf698657f4c3a5d0a88741713bcad84ac9fe4cd4104e849eaa9101d7" placeholder="13"></input>))]
+25:     Dm = int(<input size=2 ans="8363f02ccb38a600e4e610ba36911e890d2e7442862352a82c61ff62ec2d1b8f" placeholder="14"></input>)
+26: 
+27:     Dv = xp1 <input size=2 ans="0ee7daaa859bcfb56bd8ba43b53601771e28453a31faafc3f3eb991b89205063" placeholder="15"></input> (<input size=2 ans="4c38d84a5ed009d56fc0cbc809534ab5f2a0f4b293d20143041927ca72fb7b69" placeholder="16"></input>-xp1)*(<input size=2 ans="973739f94ee85f4d13be89be8fea4daba17bc3bacdabe18f2a899b61676245cc" placeholder="17"></input>-Dm)
+28: 
+29: print("decile", Dv)
+30: 
+31: # Output Value
+32: length: 10
+33: value position of decile: 2.7
+34: decile: 3.7<br>
+Q1. Which library is used in this source code implementation? <input size=2 ans="b48c2c09d0aacb9082f662c38badc2dcbe919bc3a717ec1e0bfe95f6a9741691" placeholder="18"></input>
+Q2. Which function is used to convert the division result to an integer ? <input size=2 ans="4768e0a1a7cb24d4c052ad3a303378df2e8901fecdce9e0b54c5feb644ab30aa" placeholder="19"></input>
+Q3. What is the value of decile? <input size=2 ans="a02d7ce54bd9f301cb3fb102ebed14b11aabed8e161c725709f5f0626f51e229" placeholder="20"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/1-mean.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

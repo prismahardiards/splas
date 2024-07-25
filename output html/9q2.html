@@ -1,0 +1,55 @@
+<h2 id="statement">9</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Library used
+02: import numpy as np
+03: 
+04: # Example dataset
+05: data = [1,2,3,4,5,6,7,8,9,10]
+06: 
+07: # Sorting the data
+08: sorted = np.sort(<input size=2 ans="84cb5e36965caba86d661e3944d7eca9f783355eec75cce3bd268588006c1074" placeholder="1"></input>)
+09: 
+10: # Determine the length of data
+11: n = <input size=2 ans="005efdf859cfc177e4746747cb4afffde52bb508e0db95c4e83e858094322523" placeholder="2"></input>(sorted)
+12: print("length", n)
+13: 
+14: # Determine the value position of quartile 2
+15: PQ2 = (2/<input size=2 ans="560aa3e6e94314c78236109e209ac79e15e05ec8bf2dcb78300ae65e720edf9e" placeholder="3"></input>)*(<input size=2 ans="336aa4715b636db4bea608ecbe3db8d4ab2f8cb3cee69ff38c606e8243f739c2" placeholder="4"></input><input size=2 ans="6067dce8327aac3bf2bfb1c4ebe4b6c4246217b502183ca9eb2353f5ae920829" placeholder="5"></input>1)
+16: print("value position of quartile 2", PQ2)
+17: 
+18: # Check the balue position of quartile 2
+19: if PQ2.is_integer():
+20:     Q2 = sorted[int(<input size=2 ans="f1441192db08e25f2a6b10d579692f94cd1916a59e08830a87928a999927d3a9" placeholder="6"></input>) <input size=2 ans="820d4717b48173bb2db2e93d03a43fb0efdf4abfe291c1fd12e0fa75fcea9da0" placeholder="7"></input> <input size=2 ans="a4e00d7e6aa82111575438c5e5d3e63269d4c475c718b2389f6d02932c47f8a6" placeholder="8"></input>]
+21: else:
+22:     xp1 = sorted[int(<input size=2 ans="838fa2e68869439910cb85ef33592cd2f0297dedbc074d588efe8432e8a28249" placeholder="9"></input>.floor(<input size=2 ans="c3f814d11e25ae36c353f4e580e6a2769aa4d3fed1bbf4f309990d2fa31638f5" placeholder="10"></input>))]
+23:     xp2 = sorted[<input size=2 ans="02e8d2028afdfe6e72092172932ffbf684ea82a10548af631b00078120ed4f28" placeholder="11"></input>(np.<input size=2 ans="b3395f5fd7260ae1cf8d9d4d97d4a4c1d0aaab336993592ceba98f597f308422" placeholder="12"></input>(PQ2))]
+24:     PQ3 = <input size=2 ans="7660d690501e3a4fbdff7a457a4baa58234831d84f734459895e3b5dc343885a" placeholder="13"></input>(PQ2)
+25: 
+26:     Q2 = <input size=2 ans="cdaf3587ebfcee68086c8c5c12fb6f425eafac70a8df314f40ce85e89506d51f" placeholder="14"></input> <input size=2 ans="7c5b5dcfac61d289ea02f80bb322f21299a516e27086302333354c8baa1ed55b" placeholder="15"></input> (<input size=2 ans="bf1cd021418358b283089d8094c8f1fc3ff7dae4fbb66c45e798382fa8fd31ef" placeholder="16"></input>-xp1)*(PQ2-PQ3)
+27: 
+28: print("quartil 2", Q2)
+29: 
+30: # Output Value
+31: length: 10
+32: value position of quartile 2: 5.5
+33: quartil 2: 6.5<br>
+Q1. Which library is used in this source code implementation? <input size=2 ans="de92f5c6c781dbebafd9350cc020da97a7f62dd939a4cb92cb51fa294d045c04" placeholder="17"></input>
+Q2. Which function is used to sort data? <input size=2 ans="6b2977d350ee97e6bcd44b717c8c865ff482d550ed48beb985ea18fd1e9e4473" placeholder="18"></input>
+Q3. What is the value of quartil 2? <input size=2 ans="b8d1cac4ba9d340e6b8d06583658ca5a8692b3053a63cc6015fdb36c0480357c" placeholder="19"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/1-mean.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

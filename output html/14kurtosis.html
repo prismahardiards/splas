@@ -1,0 +1,49 @@
+<h2 id="statement">14</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Library used
+02: import math as mt
+03: 
+04: # Example dataset
+05: data = [1,5,10,15,20]
+06: 
+07: # Calculate mean
+08: total = <input size=2 ans="47e8f3b21ba7b2ba7c37f08b7c82e0d59fc4a8226a00f9ff74ed12c03f62c706" placeholder="1"></input>(data)
+09: n = <input size=2 ans="99ae6e75895b3119176f73687ee3b95a1ee60fa6f2b02ea2402d2b5758792a22" placeholder="2"></input>(data)
+10: mean = total <input size=2 ans="1767f67f2a9d9b18d1d290ac57e437416692e417f50ddd8c3195616ba121f5eb" placeholder="3"></input> <input size=2 ans="2cc7542a8b16d7b8056dab04ed5d1cace89595f096c9e93bb3838a9ea6eaf86f" placeholder="4"></input>
+11: print("mean", mean)
+12: 
+13: # Calculate standard deviation
+14: square = ((<input size=2 ans="fd17a96e5ca910387800a304df1dcada3e0fe1cd465f5ca64d265fa1f19dfbb7" placeholder="5"></input> - mean) <input size=2 ans="67497ab4142a9d07db8920eb62948f5f92945b5cedd800b4657161dd9a7f95ed" placeholder="6"></input> <input size=2 ans="8ea8eb612f9362da9d2b8ae0a65daa6410c9c952a4944933a8ad17aee8f86939" placeholder="7"></input> for x in <input size=2 ans="178ccb93030c3b2dd4a3e66f621515f76c55181812fafe9e6555f733adcb290e" placeholder="8"></input>)
+15: var = <input size=2 ans="f546d478a5f40cd9dd1bf3fb5fee57310653e41ac8016e74ff8e71754b8c4b96" placeholder="9"></input>(square) <input size=2 ans="0e2f344917a3730bf147f526c28c06fc6f44e24430158adff0e6b94c1f755ed7" placeholder="10"></input> (n - <input size=2 ans="2c9fb707179e12fba74b66c78e7ad4ee0494af282846b789a2de58d0f9162f29" placeholder="11"></input>)
+16: std = mt.sqrt(<input size=2 ans="12879cc18fb5b666ac3ca5f5de4d555475858e65e5d97c0bb890adab4beade16" placeholder="12"></input>)
+17: print("standard deviation", std)
+18: 
+19: # Calculate kurtosis
+20: quad = sum((<input size=2 ans="fdf53f572ca2081cbeaf8142cf68efb2dd775044d8c2057cb2994a56fc3a670d" placeholder="13"></input> <input size=2 ans="0f7b7bab25c30ce09dac78e8467bda51bbf9b00d2661fe6e8969c88ee6491e13" placeholder="14"></input> <input size=2 ans="cab4143a74d200f0087c6ea05df5020d77b15d9252b7af5414435fe1a1f66261" placeholder="15"></input>) ** <input size=2 ans="c8c7dd26c738728584432aa2a35cacc755387f528c5454f80c843659a6572947" placeholder="16"></input> for x in data)
+21: G2 = ((<input size=2 ans="e9868e230c1ce3e1847eb84fcee8e2cfce0b8a3d156a171968130323d014e046" placeholder="17"></input>*(n+1)/((n<input size=2 ans="b71d83eb28cb9051bb4f7546c1932d50686b2f6dca915d10f96a326aa163daaf" placeholder="18"></input>1)*(n-2)*(n-<input size=2 ans="9437eee19b5c5053e739d6190db460ffc47790ea526b353a2caa5b7ea9912758" placeholder="19"></input>)))*(quad/(<input size=2 ans="124e826be04e184a41eabf7a7155b6f55c5f342453bf70a62a6e555f12cc29fe" placeholder="20"></input>**4))) - (3*(n-1)**2/((n-2)*(n-3)))
+22: print("kurtosis", G2)
+23: 
+24: # Outpur Value
+25: mean: 10.2
+26: standard deviation: 7.60
+27: kurtosis: -1.38<br>
+Q1. Which function is used to returns the square root of a number? <input size=2 ans="3e90b79724dfcb12b04a066ee7592f9cd4b3f85a966edb33cf5bb1bc72d1498d" placeholder="21"></input>
+Q2. Which library is used in this source code implementation? <input size=2 ans="0b030acd671585e8d84c5e1e0c2242fa63842a7a78f7670c257d2cdf720ac81e" placeholder="22"></input>
+Q3. What is the value of mean? <input size=2 ans="9d4988b538a8c5cb06bb45ee34722144fb7e73d1eb01f9af49dcc4963ddfdbaa" placeholder="23"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/1-mean.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

@@ -1,0 +1,12 @@
+# Example dataset
+data = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+xmax = max(data)
+xmin = min(data)
+
+range = xmax - xmin
+
+print("range", range)
+
+# Output Value
+range: 18

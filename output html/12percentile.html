@@ -1,0 +1,55 @@
+<h2 id="statement">12</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Library used
+02: import numpy as np
+03: 
+04: # Example dataset
+05: data = [1,3,5,7,9,2,4,6,8,10]
+06: 
+07: # Sorting the data
+08: sorted = np.<input size=2 ans="dac1bbf54809a35c821a9d994a1b54904c4cc3d3a1278f657f1cd3f3a85e7379" placeholder="1"></input>(data)
+09: 
+10: # Determine the length of data
+11: n = <input size=2 ans="af22393c36c2f886f85d1813118578e0a0054bbe52c29555d2d5f4ebb57e0520" placeholder="2"></input>(sorted)
+12: print("length", n)
+13: 
+14: # Determine the value position of percentile
+15: p = <input size=2 ans="dd65c0a7536affef35f3383b9c1be5a8fe319f6a99c5c29a70f8c8b91ea8bba1" placeholder="3"></input>
+16: Pp = p * (<input size=2 ans="331a3c8568c8f5fd2ecc4155aaa7c0ae811423f5bf9bec13723002c9a4c77290" placeholder="4"></input><input size=2 ans="5f9c2b683e6727c0e75e270de5d76c491873c8da897f9e84d16d2cd42c23fc10" placeholder="5"></input>1)/<input size=2 ans="07c3f8108a9b55a665a846b65939d55f57f9d6148a99cb72d747be4764392e15" placeholder="6"></input>
+17: print("value position of percentile", Pp)
+18: 
+19: # Check the balue position of percentile
+20: if Pp.is_integer():
+21:     Pv = sorted[<input size=2 ans="9fc0d97df085efd0bf30baffb19045752ce5be7ed5b8254665b9cd5edb0cfc77" placeholder="7"></input>(Pp) <input size=2 ans="55e680185552dd7355632919f7ecd952df637414d8c8e2589150fe3d4a54174a" placeholder="8"></input> <input size=2 ans="e9ab39f01d431c5250493a3dc493bba9c43f73a4461c72b5135ee09738582af7" placeholder="9"></input>]
+22: else:
+23:     xp1 = sorted[<input size=2 ans="2427cf45673a1e3d0afc41c2d27073e65be27fff2cb90e990bbce27d875daba7" placeholder="10"></input>(np.floor(<input size=2 ans="c2c3cc169af3330c52acf8f1a50657c15a5ee0221c18140b250360969d8bfc1c" placeholder="11"></input>))]
+24:     xp2 = <input size=2 ans="ca2b45c6c37e921e86318cbfa7cf21d2b77b6585205f2472774607fbf5367e10" placeholder="12"></input>[int(<input size=2 ans="2ff4b588303d0c1c58baecf05319837c1126eb4fdd2d0d787c4b4cea3d8946c0" placeholder="13"></input>.ceil(Pp))]
+25:     Pq = <input size=2 ans="864e9b9fa69a41352b56c6dd5a287d374ecbfde9fc9aa27367d2b5c00b00ef7d" placeholder="14"></input>(Pp)
+26: 
+27:     Pv = <input size=2 ans="293ba29c8508eb2074c30d925b6d7c952e044f71123fcf589cc1844698c3f22b" placeholder="15"></input> + (xp2<input size=2 ans="d6c724f0db56c4356fed9d90286c397999dedc6a1f4c43d7ad5a91bf99f0f77f" placeholder="16"></input>xp1)*(<input size=2 ans="be892b06f265a88d78edc16aab72d69c1de638037f36a76a700db9238b6ba873" placeholder="17"></input>-Pq)
+28: 
+29: print("percentile", Pv)
+30: 
+31: # Output Value
+32: length: 10
+33: value position of percentile: 0.27
+34: percentile: 1.27<br>
+Q1. Which library is used in this source code implementation? <input size=2 ans="702a1a12a4477ea428600cc9dfedf413e5fbcc8a2364df49909610688ba93a96" placeholder="18"></input>
+Q2. What is the value of length? <input size=2 ans="7faeb2d774bef1155a96e218467bae7ed04d9da6636ad438699c4e27ffa4a3dd" placeholder="19"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/1-mean.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>

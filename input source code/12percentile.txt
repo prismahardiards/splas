@@ -1,0 +1,34 @@
+# Library used
+import numpy as np
+
+# Example dataset
+data = [1,3,5,7,9,2,4,6,8,10]
+
+# Sorting the data
+sorted = np.sort(data)
+
+# Determine the length of data
+n = len(sorted)
+print("length", n)
+
+# Determine the value position of percentile
+p = 3
+Pp = p * (n-1)/100
+print("value position of percentile", Pp)
+
+# Check the balue position of percentile
+if Pp.is_integer():
+    Pv = sorted[int(Pp) - 1]
+else:
+    xp1 = sorted[int(np.floor(Pp))]
+    xp2 = sorted[int(np.ceil(Pp))]
+    Pq = int(Pp)
+
+    Pv = xp1 + (xp2-xp1)*(Pp-Pq)
+
+print("percentile", Pv)
+
+# Output Value
+length: 10
+value position of percentile: 0.27
+percentile: 1.27

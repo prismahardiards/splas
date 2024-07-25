@@ -1,0 +1,25 @@
+# Example dataset
+data = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+# Determine length of data
+n = len (data)
+print("length data", n)
+
+# Determine the sum of data
+total = sum (data)
+print("summation data", total)
+
+# Determine mean
+mean = total / n
+print("mean", mean)
+
+# Calculate the variance
+square = [(x - mean) ** 2 for x in data]
+var = sum( square ) / (n - 1)
+print("variance", var)
+
+# Output Value
+length data: 10
+summation data: 110
+mean: 11
+variance: 36.67

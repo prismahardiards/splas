@@ -1,0 +1,45 @@
+<h2 id="statement">3</h2>
+Fill in Blanks<br>
+<DIV class="fl" style="width: 670px; height: 620px"><h4 id="code">Source Code</h4>
+<pre class="prettyprint" id="scoring-res">
+01: # Example dataset
+02: data = [2, 2, 4, 4, 6, 6, 9, 6, 6, 9]
+03: 
+04: # Determine the frequency
+05: frequency = {}
+06: for str in data :
+07:     if str in frequency :
+08:         frequency[str] += <input size=2 ans="eeca91fd439b6d5e827e8fda7fee35046f2def93508637483f6be8a2df7a4392" placeholder="1"></input>
+09:     else :
+10:         frequency[str] = <input size=2 ans="dbb1ded63bc70732626c5dfe6c7f50ced3d560e970f30b15335ac290358748f6" placeholder="2"></input>
+11: 
+12: # Determine the maximum frequency
+13: maxs = <input size=2 ans="d4f372ae8b8b32a959a788b0216fa210670937e30882615998c94f56f6a2cece" placeholder="3"></input>(list(frequency.<input size=2 ans="24e156832bd8d0b021eb0a784a9f8163504c11129dfd274c4fac50afcd901e6e" placeholder="4"></input>()))
+14: print("maxs", maxs)
+15: 
+16: # Identification of mode
+17: mode = [key for key, value in <input size=2 ans="dd91cc020328cb736ea683e96e91c3b5ee9a1725811b72738775abaa56ae6739" placeholder="5"></input>.items() if value == <input size=2 ans="fa8f304c5966f6c5e188d2e6bdbd965b6d56a587c2a1f57430811f6cb6f0eb2a" placeholder="6"></input>]
+18: print("mode", mode)
+19: 
+20: # Output Value
+21: maxs: 4
+22: mode: 6<br>
+Q1. Which function is used to returns a list of all the values from the dictionary? <input size=2 ans="0086c7cb4d19dd623674921c7874887edfd357bebb32f40ba892bc29061e6f78" placeholder="7"></input>
+Q2. Which keyword is used to determine the initial data ? <input size=2 ans="e76d389d2dff8b42c687824d64c6d4f43e02ef4d846142b7f1837d7c77b5b4a4" placeholder="8"></input>
+Q3. Which keyword is used to determine record the number of frequency of each element ? <input size=2 ans="64004978bf39b160fb3a8ac4c1174a1fe41bd202b56f333e4fa0c4b92faf9fd0" placeholder="9"></input>
+Q4. What is the value of mode? <input size=2 ans="c8b586101e25a9d10caa8d7da8691ed67ce637d4fe101d6cf593ffd963bd003b" placeholder="10"></input>
+</DIV>
+</pre>
+<DIV class="fl" style="width: 430px; height: 620px"><h4 id="code">Description</h4>
+<pre class="prettyprint" id="scoring-res"><img src="./img/1-mean.png" alt="Mean">
+</pre>
+</DIV><DIV class="fr" style="width: 1100px; height: 130px"><h4 id="code1">References</h4>
+<pre class="prettyprint" id="scoring-res">
+<h2 id="code1"></h2><a href="./references/references.pdf" target="_blank">Download</a>
+</pre>
+</DIV><a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+$(function(){
+ prettyPrint();
+});
+</script>
